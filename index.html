@@ -8,30 +8,23 @@
     <header>
 <!--Верхняя строка-->
       <div>
-        <div>
-          Техномарт
-        </div>
-        <img src = "https://via.placeholder.com/16x16" alt="">
-        Поиск: 
-        <input >
-        <a href = "#">
-          <img src = "https://via.placeholder.com/16x16" alt="">Закладки: 0
-        </a>
-        <a href = "#">
-          <img src = "https://via.placeholder.com/16x16" alt="">Корзина: 0
-        </a>
-        <a href = "#">
-          Оформить заказ
-        </a>
+        <a href="index.html"><img src="https://via.placeholder.com/220x47" alt="Техномарт"></a>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <label>
+            Поиск:<input type="text" name="search">
+          </label>
+        </form>
+        <a href="#">Закладки: 0</a>
+        <a href="#">Корзина: 0</a>
+        <a href="#">Оформить заказ</a>
       </div>
 <!--Средняя часть-->
       <div>
-        <div>
-          Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта
-        </div>
+        <p>
+          Интернет-магазин строительных материалов и инструментов для ремонта
+        </p>
         <div>
           <p>
-            <img src="https://via.placeholder.com/16x16" alt="">
             <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           </p>
           <p>
@@ -39,14 +32,14 @@
           </p>
         </div>
         <div>
-          <a href=""><img src="https://via.placeholder.com/16x16" alt="">Войти</a>
-          <a href="">Регистрация</a>
+          <a href="#">Войти</a>
+          <a href="#">Регистрация</a>
         </div>
       </div>
 <!--Навигация-->
       <nav>
         <ul>
-          <li><a href="">Главная</a></li>
+          <li><a href="index.html">Главная</a></li>
           <li><a href="">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="">Новости</a></li>
@@ -60,92 +53,109 @@
 <!--Основной раздел-->    
     <main>
 
-<!-- #вопрос: по идее таблица не должна использоваться для сетки, но пока что 
-  у меня нет других идей, как сделать большой прямоугольник в окружении маленьких-->
-  <!-- еще один #вопрос: надо ли это фрагмент обернуть в section? по смыслу
-  вроде бы да, это неделимый смысловой раздел, но к секции рекомендуется заголовок. Как правильно?-->
-
 <!--Предложения-->
-      <table>
-        <tr>
-          <td>
-            <p>Материалы<br><a href = "#">На любой вкус</a></p>
-            <img src = "https://via.placeholder.com/44x65" alt="">              
-          </td>
-          <td>
-            <p>Инструмент<br><a href = "#">На все случаи</a></p>
-            <img src = "https://via.placeholder.com/75x61" alt="">               
-          </td>
-          <td>
-            <p>Техника<br><a href = "#">Для стройки</a></p>
-            <img src = "https://via.placeholder.com/78x62" alt="">               
-          </td>
-        </tr>
-        <tr>
-          <td rowspan = "2" colspan = "2">
+      <section>
+        <div>
+          <a href="#">
+            <p>Материалы</p>
+            <p>На любой вкус</p>
+            <img src="https://via.placeholder.com/44x65" alt="">             
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <p>Инструмент</p>
+            <p>На все случаи></p>
+            <img src="https://via.placeholder.com/75x61" alt="">             
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <p>Техника</p>
+            <p>Для стройки</p>
+            <img src="https://via.placeholder.com/78x62" alt="">             
+          </a>
+        </div>
+        <div>
+          <a href="#">
             <p><span>Перфораторы</span><br>
-              Настоящие мужские игрушки
+            Настоящие мужские игрушки
             </p>
-            <a href = "#">Открыть каталог</a>
-          </td>
-          <td>
-            <p>Скидки<br><a href = "#">На 350 товаров</a></p>
-            <img src = "https://via.placeholder.com/59x72" alt="">                   
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>Доставка<br><a href = "#">Бесплатно</a></p>
-            <img src = "https://via.placeholder.com/78x63" alt="">                   
-          </td>            
-        </tr>
-      </table>
-<!--Популярные товары-->
+            <a href="#">Открыть каталог</a>            
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <p>Скидки</p>
+            <p>На 350 товаров</p>
+            <img src="https://via.placeholder.com/59x72" alt="">             
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <p>Доставка</p>
+            <p>Бесплатно</p>
+            <img src="https://via.placeholder.com/78x63" alt="">            
+          </a>
+        </div>
+      </section>
+
+      <!--Популярные товары-->
       <section>
         <div>
           <h2>Популярные товары:</h2>
-          <a href = "#">Все  популярные товары</a>
+          <a href="#">Все популярные товары</a>
         </div>
-        <article>
-          <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSH BFG-9000">
-          <h3>Перфоратор BOSH BFG-9000</h3>
-          <p>32500 Р.</p>
-          <p>25500 Р.</p>
-        </article>
-        <article>
-          <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSH BFG-3000">
-          <h3>Перфоратор BOSH BFG-3000</h3>
-          <p>22500 Р.</p>
-          <p>15500 Р.</p>
-        </article>
-        <article>
-          <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSH BFG-6000">
-          <h3>Перфоратор BOSH BFG-6000</h3>
-          <p>30500 Р.</p>
-          <p>25500 Р.</p>
-        </article>
-        <article>
-          <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSH BFG-2000">
-          <h3>Перфоратор BOSH BFG-9000</h3>
-          <p>22500 Р.</p>
-          <p>12500 Р.</p>
-        </article>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSH BFG-9000">
+              <h3>Перфоратор BOSH BFG-9000</h3>
+              <p>32500 Р.</p>
+              <p>25500 Р.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSH BFG-3000">
+              <h3>Перфоратор BOSH BFG-3000</h3>
+              <p>22500 Р.</p>
+              <p>15500 Р.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSH BFG-6000">
+              <h3>Перфоратор BOSH BFG-6000</h3>
+              <p>30500 Р.</p>
+              <p>25500 Р.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://via.placeholder.com/184x164" alt="Перфоратор BOSH BFG-2000">
+              <h3>Перфоратор BOSH BFG-9000</h3>
+              <p>22500 Р.</p>
+              <p>12500 Р.</p>
+            </a>
+          </li>
+        </ul>
       </section>
 <!--Популярные производители-->
       <section>
         <div>
           <h2>Популярные проиводители:</h2>
-          <a href = "#">Все производители</a>
+          <a href="#">Все производители</a>
         </div>  
         <div>
-          <a><img src = "#" alt = "Bosch"></a>
-          <a><img src = "#" alt = "Makita"></a>
-          <a><img src = "#" alt = "DeWALT"></a>
-          <a><img src = "#" alt = "Интерскол"></a>
-          <a><img src = "#" alt = "Hitachi"></a>
-          <a><img src = "#" alt = "LG"></a>
-          <a><img src = "#" alt = "AEG"></a>
-          <a><img src = "#" alt = "metabo"></a>
+          <a><img src="#" alt="Bosch"></a>
+          <a><img src="#" alt="Makita"></a>
+          <a><img src="#" alt="DeWALT"></a>
+          <a><img src="#" alt="Интерскол"></a>
+          <a><img src="#" alt="Hitachi"></a>
+          <a><img src="#" alt="LG"></a>
+          <a><img src="#" alt="AEG"></a>
+          <a><img src="#" alt="metabo"></a>
         </div>
       </section>
 <!--Сервисы-->
@@ -200,14 +210,14 @@
 <!--Подвал-->
     <footer>
       <div>
-        <p>Техномарт</p>
+        <a href="index.html"><img src="https://via.placeholder.com/220x47" alt="Техномарт"></a>
         <p>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         </p>
         <nav>
           <ul>
-            <li><a href="">Главная</a></li>
+            <li><a href="index.html">Главная</a></li>
             <li><a href="">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="">Новости</a></li>
@@ -224,27 +234,22 @@
         </nav>
       </div>
       <div>
-        <div>
+        <p>
           © 2010-2019 Компания «Техномарт»<br>
           Все права защищены
-        </div>
+        </p>
         <div>
-          <a href=""><img src="https://via.placeholder.com/16x16" alt=""></a>
-          <a href=""> <img src="https://via.placeholder.com/16x16" alt=""></a>
-          <a href=""><img src="https://via.placeholder.com/16x16" alt=""></a>
+          <!--Блок иконок соцсетей, удален по замечанию. Коммент, чтобы не забыть что тут.-->
         </div>
-        <div>
+        <p>
           Обратная связь:<br>
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div>
+        </p>
+        <p>
           Разработано –<br>
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </div>
+        </p>
       </div>
     </footer>
-    <!--#вопрос: на странице в итоге нет заголовка h1. Это нормально?
-    вроде бы читал в какой-то статье про seo, что это нехорошо. 
-    Если его все же делать, то что может им быть?.. -->
   </body>
 </html>

@@ -8,30 +8,23 @@
     <header>
 <!--Верхняя строка-->
       <div>
-        <div>
-          Техномарт
-        </div>
-        <img src = "https://via.placeholder.com/16x16" alt="">
-        Поиск: 
-        <input >
-        <a href = "#">
-          <img src = "https://via.placeholder.com/16x16" alt="">Закладки: 0
-        </a>
-        <a href = "#">
-          <img src = "https://via.placeholder.com/16x16" alt="">Корзина: 10
-        </a>
-        <a href = "#">
-          Оформить заказ
-        </a>
+        <a href="index.html"><img src="https://via.placeholder.com/220x47" alt="Техномарт"></a>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <label>
+            Поиск:<input type="text" name="search">
+          </label>
+        </form>
+        <a href="#">Закладки: 0</a>
+        <a href="#">Корзина: 10</a>
+        <a href="#">Оформить заказ</a>
       </div>
 <!--Средняя часть-->
       <div>
-        <div>
-          Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта
-        </div>
+        <p>
+          Интернет-магазин строительных материалов и инструментов для ремонта
+        </p>
         <div>
           <p>
-            <img src="https://via.placeholder.com/16x16" alt="">
             <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           </p>
           <p>
@@ -40,16 +33,10 @@
         </div>
         <div>
           <div>
-            <a href = "#">
-              <img src="https://via.placeholder.com/16x16" alt="">
-              Равшан Джамшутович
-            </a>
-            <a href = "#">
-              <img src="https://via.placeholder.com/16x16" alt="Выйти">
-            </a>
+            <a href="#">Равшан Джамшутович</a>
+            <a href="#"></a>
           </div>
           <a href="">Мои заказы</a>
-          <span><!--bullet-разделитель--></span>
           <a href="">Личный кабинет</a>
         </div>
       </div>
@@ -69,127 +56,134 @@
 
 <!--Основной раздел-->
     <main>
+      <h1>Перфораторы</h1>
+      <!--Боковая панель-->
       <section>
-        <h1>Перфораторы</h1>
-  <!--Боковая панель-->
-        <aside>
-          <p>Фильтр:</p>
-          <form action="https://echo.htmlacademy.ru/" method="get">
-            <p>Цена:</p>
-            <!--контрол выбора диапазона цены - не пойму, как его сделать-->
-            <input type="text" name="priceMin">
-            <p>-</p>
-            <input type="text" name="priceMax">
-            <hr>
-            <p>Производители:</p>
-            <label>
-              <input type="checkbox">Bosh
-            </label>
-            <label>
-              <input type="checkbox">Интерскол
-            </label>
-            <label>
-              <input type="checkbox">Makita
-            </label>
-            <label>
-              <input type="checkbox">DeWALT
-            </label>
-            <label>
-              <input type="checkbox">Hitachi
-            </label>
-            <hr>
-            <p>Питание:</p>
-            <label>
-              <input type="radio" name="powerType" value="accum" checked>
-            </label>
-            <label>
-              <input type="radio" name="powerType" value="wired">
-            </label>
-            <button type="submit">Показать</button>
-          </form>
-        </aside>
+        <p>Фильтр:</p>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <p>Цена:</p>
+          <input type="range" id="priceRange" name="priceRange" 
+          min="0" max="50000" value="0" step="100">
+          <input type="text" name="priceMin" value="0">
+          <input type="text" name="priceMax" value="50000">
+          <p>Производители:</p>
+          <label>
+            <input type="checkbox" name="bosh">Bosh
+          </label>
+          <label>
+            <input type="checkbox" name="interskol">Интерскол
+          </label>
+          <label>
+            <input type="checkbox" name="makita">Makita
+          </label>
+          <label>
+            <input type="checkbox" name="dewalt">DeWALT
+          </label>
+          <label>
+            <input type="checkbox" name="hitachi">Hitachi
+          </label>
+          <p>Питание:</p>
+          <label>
+            <input type="radio" name="powerType" value="accum" checked>
+          </label>
+          <label>
+            <input type="radio" name="powerType" value="wired">
+          </label>
+          <button type="submit">Показать</button>
+        </form>
+      </section>
 
-<!--Каталог-->        
+      <!--Каталог-->        
+      <section>
         <div>
-          <div>
-            <p>Сортировка:</p>
-            <p>По цене</p>
-            <p>По типу</p>
-            <p>По функционалу</p>
-            <span><!--По возрастанию--></span>
-            <span><!--По убыванию--></span>
-          </div>
-          <div>
-            <article>
+          <a href="#">Сортировка:</a>
+          <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По функционалу</a>
+          <a href="#"><!--По возрастанию--></a>
+          <a href="#"><!--По убыванию--></a>
+        </div>
+        <ul>
+          <li>
+            <a href="#">
               <img src="https://via.placeholder.com/144x128" alt="Перфоратор BOSH BFG-6000">
               <h2>Перфоратор BOSH BFG-6000</h2>
               <p>30500 Р.</p>
-              <p>25500 Р.</p>
-            </article>
-
-            <article>
+              <p>25500 Р.</p>                  
+            </a>
+          </li>
+          <li>
+            <a href="#">
               <img src="https://via.placeholder.com/144x128" alt="Перфоратор BOSH BFG-6000">
               <h2>Перфоратор BOSH BFG-6000</h2>
               <p>30500 Р.</p>
-              <p>25500 Р.</p>
-            </article>
-        
-            <article>
+              <p>25500 Р.</p>                  
+            </a>
+          </li>
+          <li>
+            <a href="#">
               <div>В закладки</div>
               <h2>Перфоратор BOSH BFG-6000</h2>
               <p>30500 Р.</p>
-              <p>25500 Р.</p>
-            </article>
-            
-            <article>
+              <p>25500 Р.</p>                  
+            </a>
+          </li>
+          <li>
+            <a href="#">
               <img src="https://via.placeholder.com/144x128" alt="Перфоратор BOSH BFG-3000">
               <h2>Перфоратор BOSH BFG-3000</h2>
               <p>22500 Р.</p>
-              <p>15500 Р.</p>
-            </article>
-            
-            <article>
+              <p>15500 Р.</p>                  
+            </a>
+          </li>
+          <li>
+            <a href="#">
               <img src="https://via.placeholder.com/144x128" alt="Перфоратор BOSH BFG-6000">
               <h2>Перфоратор BOSH BFG-6000</h2>
               <p>30500 Р.</p>
-              <p>25500 Р.</p>
-            </article>
-            
-            <article>
+              <p>25500 Р.</p>                  
+            </a>
+          </li>
+          <li>
+            <a href="#">
               <img src="https://via.placeholder.com/144x128" alt="Перфоратор BOSH BFG-2000">
               <h2>Перфоратор BOSH BFG-2000</h2>
               <p><!--чтобы нижняя цена была там же, где и остальные--></p>
-              <p>12500 Р.</p>
-            </article>
-                    
-            <article>
+              <p>12500 Р.</p>                  
+            </a>
+          </li>
+          <li>
+            <a href="#">
               <img src="https://via.placeholder.com/144x128" alt="Перфоратор BOSH BFG-3000">
               <h2>Перфоратор BOSH BFG-3000</h2>
               <p>22500 Р.</p>
-              <p>15500 Р.</p>
-            </article>
-            
-            <article>
+              <p>15500 Р.</p>                  
+            </a>
+          </li>
+          <li>
+            <a href="#">
               <img src="https://via.placeholder.com/144x128" alt="Перфоратор BOSH BFG-6000">
               <h2>Перфоратор BOSH BFG-6000</h2>
               <p>30500 Р.</p>
-              <p>25500 Р.</p>
-            </article>
-            
-            <article>
+              <p>25500 Р.</p>                  
+            </a>
+          </li>
+          <li>
+            <a href="#">
               <img src="https://via.placeholder.com/144x128" alt="Перфоратор BOSH BFG-2000">
               <h2>Перфоратор BOSH BFG-2000</h2>
               <p><!--чтобы нижняя цена была там же, где и остальные--></p>
-              <p>12500 Р.</p>
-            </article>
-          </div>
-          <!--страницы-->
-          <div>
-            <a href = "#">1</a>
-            <a href = "#">2</a>
-            <a href = "#">3</a>
-            <a href = "#">Следующая</a>
-          </div>
+              <p>12500 Р.</p>                  
+            </a>
+          </li>
+        </ul>
+ 
+        <!--страницы-->
+        <div>
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">Следующая</a>
         </div>
       </section>
       <section>
@@ -200,14 +194,14 @@
 <!--Подвал-->
     <footer>
       <div>
-        <p>Техномарт</p>
+        <a href="index.html"><img src="https://via.placeholder.com/220x47" alt="Техномарт"></a>
         <p>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         </p>
         <nav>
           <ul>
-            <li><a href="">Главная</a></li>
+            <li><a href="index.html">Главная</a></li>
             <li><a href="">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="">Новости</a></li>
@@ -224,23 +218,21 @@
         </nav>
       </div>
       <div>
-        <div>
+        <p>
           © 2010-2019 Компания «Техномарт»<br>
           Все права защищены
-        </div>
+        </p>
         <div>
-          <a href=""><img src="https://via.placeholder.com/16x16" alt=""></a>
-          <a href=""> <img src="https://via.placeholder.com/16x16" alt=""></a>
-          <a href=""><img src="https://via.placeholder.com/16x16" alt=""></a>
+          <!--Блок иконок соцсетей, удален по замечанию. Коммент, чтобы не забыть что тут.-->
         </div>
-        <div>
+        <p>
           Обратная связь:<br>
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div>
+        </p>
+        <p>
           Разработано –<br>
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </div>
+        </p>
       </div>
     </footer>
   </body>
