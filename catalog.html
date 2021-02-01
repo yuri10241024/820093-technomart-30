@@ -36,65 +36,76 @@
             <a href="#">Равшан Джамшутович</a>
             <a href="#"></a>
           </div>
-          <a href="">Мои заказы</a>
-          <a href="">Личный кабинет</a>
+          <a href="#">Мои заказы</a>
+          <a href="#">Личный кабинет</a>
         </div>
       </div>
 <!--Навигация-->
       <nav>
         <ul>
           <li><a href="index.html">Главная</a></li>
-          <li><a href="">Компания</a></li>
+          <li><a href="#">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="">Новости</a></li>
-          <li><a href="">Спецпредложения</a></li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Контакты</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
 
 <!--Основной раздел-->
     <main>
+      <ul>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li><a href="#">Перфораторы</a></li>
+      </ul>
       <h1>Перфораторы</h1>
       <!--Боковая панель-->
-      <section>
+      <div>
         <p>Фильтр:</p>
         <form action="https://echo.htmlacademy.ru/" method="get">
-          <p>Цена:</p>
-          <input type="range" id="priceRange" name="priceRange" 
-          min="0" max="50000" value="0" step="100">
-          <input type="text" name="priceMin" value="0">
-          <input type="text" name="priceMax" value="50000">
-          <p>Производители:</p>
-          <label>
-            <input type="checkbox" name="bosh">Bosh
-          </label>
-          <label>
-            <input type="checkbox" name="interskol">Интерскол
-          </label>
-          <label>
-            <input type="checkbox" name="makita">Makita
-          </label>
-          <label>
-            <input type="checkbox" name="dewalt">DeWALT
-          </label>
-          <label>
-            <input type="checkbox" name="hitachi">Hitachi
-          </label>
-          <p>Питание:</p>
-          <label>
-            <input type="radio" name="powerType" value="accum" checked>
-          </label>
-          <label>
-            <input type="radio" name="powerType" value="wired">
-          </label>
-          <button type="submit">Показать</button>
+          <fieldset>
+            <p>Цена:</p>
+            <input type="range" id="priceRange" name="priceRange" 
+            min="0" max="50000" value="0" step="100">
+            <input type="number" name="priceMin" value="0">
+            <input type="number" name="priceMax" value="50000">
+          </fieldset>
+          <fieldset>
+            <p>Производители:</p>
+            <label>
+              <input type="checkbox" name="bosh">Bosh
+            </label>
+            <label>
+              <input type="checkbox" name="interskol">Интерскол
+            </label>
+            <label>
+              <input type="checkbox" name="makita">Makita
+            </label>
+            <label>
+              <input type="checkbox" name="dewalt">DeWALT
+            </label>
+            <label>
+              <input type="checkbox" name="hitachi">Hitachi
+            </label>
+          </fieldset>
+          <fieldset>
+            <p>Питание:</p>
+            <label>
+              <input type="radio" name="powerType" value="accum" checked>Аккумуляторные
+            </label>
+            <label>
+              <input type="radio" name="powerType" value="wired">Сетевые
+            </label>
+            <button type="submit">Показать</button>
+          </fieldset>
         </form>
-      </section>
+      </div>
 
       <!--Каталог-->        
-      <section>
+      <div>
         <div>
           <a href="#">Сортировка:</a>
           <a href="#">По цене</a>
@@ -121,8 +132,9 @@
             </a>
           </li>
           <li>
+            <a href="#">Купить</a>
+            <a href="#">В закладки</a>
             <a href="#">
-              <div>В закладки</div>
               <h2>Перфоратор BOSH BFG-6000</h2>
               <p>30500 Р.</p>
               <p>25500 Р.</p>                  
@@ -148,7 +160,6 @@
             <a href="#">
               <img src="https://via.placeholder.com/144x128" alt="Перфоратор BOSH BFG-2000">
               <h2>Перфоратор BOSH BFG-2000</h2>
-              <p><!--чтобы нижняя цена была там же, где и остальные--></p>
               <p>12500 Р.</p>                  
             </a>
           </li>
@@ -172,7 +183,6 @@
             <a href="#">
               <img src="https://via.placeholder.com/144x128" alt="Перфоратор BOSH BFG-2000">
               <h2>Перфоратор BOSH BFG-2000</h2>
-              <p><!--чтобы нижняя цена была там же, где и остальные--></p>
               <p>12500 Р.</p>                  
             </a>
           </li>
@@ -185,7 +195,7 @@
           <a href="#">3</a>
           <a href="#">Следующая</a>
         </div>
-      </section>
+      </div>
       <section>
         <h2>Пара слов о перфораторах</h2>
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
@@ -202,18 +212,18 @@
         <nav>
           <ul>
             <li><a href="index.html">Главная</a></li>
-            <li><a href="">Компания</a></li>
+            <li><a href="#">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="">Новости</a></li>
-            <li><a href="">Спецпредложения</a></li>
-            <li><a href="">Доставка</a></li>
-            <li><a href="">Контакты</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
           <ul>
-              <li><a href="">Материалы</a></li>
-              <li><a href="">Техника</a></li>
-              <li><a href="">Инструмент</a></li>
-              <li><a href="">Спецпредложения</a></li>
+              <li><a href="#">Материалы</a></li>
+              <li><a href="#">Техника</a></li>
+              <li><a href="#">Инструмент</a></li>
+              <li><a href="#">Спецпредложения</a></li>
           </ul>
         </nav>
       </div>
@@ -223,7 +233,9 @@
           Все права защищены
         </p>
         <div>
-          <!--Блок иконок соцсетей, удален по замечанию. Коммент, чтобы не забыть что тут.-->
+          <a href="#"><img src="https://via.placeholder.com/16x16" alt=""></a>
+          <a href="#"> <img src="https://via.placeholder.com/16x16" alt=""></a>
+          <a href="#"><img src="https://via.placeholder.com/16x16" alt=""></a>
         </div>
         <p>
           Обратная связь:<br>
