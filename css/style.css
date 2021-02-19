@@ -1,262 +1,330 @@
 :root {
     --basic-black: #000000;
-    --basic-white: #ffffff;
+    --basic-white: #FFFFFF;
     --basic-white-blue: #F1F5F7;
     --basic-white-gray: #F3F7F9;
     --basic-darkest: #293449;
     --basic-dark: #32425C;
     --basic-red: #EE3643;
+    --basic-red-2: #CA2C37;
+    --basic-red-3: #BA2732;
     --basic-green: #63A63E;
-    --basic-green-2:#5FBB2D;
+    --basic-green-2: #5FBB2D;
     --basic-orange: #FFBF47;
     --basic-lightorange: #FFD180;
     --basic-lightblue: #3BBCE3;
     --basic-magenta: #DC91D8;
     --basic-lightgreen: #8ED78F;
+    --basic-biege: #F7F3EC;
     --basic-lightbiege: #F9F5F0;
-    --basic-gray:#A9A9A9;
+    --basic-gray: #A9A9A9;
     --basic-lightgray: #F1F5F7;
     --basic-extraligthgray: #EAEAEA;
     --basic-dark-light: #405069;
     --basic-middle-gray: #C5C5C5;
 }
 
-.main-toolbar{
-    background-color: var(--basic-darkest);
+body {
+    font-family: Cuprum, Arial, sans-serif;
 }
-.main-toolbar a{
-    color: var(--basic-white);
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
+
+a {
     text-decoration: none;
 }
 
-.main-search{
-    color: var(--basic-white);
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
+.header {
+    background-color: var(--basic-lightgray);
 }
 
-.main-search input{
+.header-toolbar {
     background-color: var(--basic-darkest);
+}
+.header-toolbar a {
     color: var(--basic-white);
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 24px;
 }
 
-.main-search input:focus{
+.header-search {
+    color: var(--basic-white);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.header-search input {
+    background-color: transparent;
+    color: var(--basic-white);
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.header-search input:focus {
+    outline: none;
+}
+
+/*
+.header-search input::placeholder {
+    color: var(--basic-white);
+}
+
+.header-search input::-moz-placeholder {
+    color: var(--basic-white);
+}
+*/
+
+.search-field {
+    border-width: 0px;
+}
+
+
+.search-field::placeholder {
+    color: var(--basic-white);
+}
+
+.search-field:-moz-placeholder {
+    color: var(--basic-white);
+}
+
+.search-field::-moz-placeholder {
+    color: var(--basic-white);
+}
+
+.header-search input:focus {
     background-color: var(--basic-white);
     color:var(--basic-black);
 }
 
-.main-logo{
+.header-logo {
     background-color: var(--basic-red);
 }
 
-.main-order{
+.header-cart {
+/* TODO: если не понадобится - удалить */    
+}
+
+.header-cart-notEmpty {
+    background-color: var(--basic-red);
+}
+
+.header-order {
     background-color: var(--basic-green);
 }
-.main-order:hover{
+.header-order:hover {
     background-color: var(--basic-green-2);
 }
 
-.main-header-middle{
+.header-order:active {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header-middle {
     background-color: var(--basic-lightgray);
 }
 
-.main-header-middle-description{
+.header-middle-description {
     color: var(--basic-red);
-    font-family: Cuprum, Arial;
     font-style: italic;
-    font-weight: normal;
     font-size: 16px;
     line-height: 23px;
 }
 
-.main-header-phone a{
+.header-phone a {
     color: var(--basic-red);
-    font-family: Cuprum, Arial;
-    font-style: normal;
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
     text-decoration: none;
 }
 
-.main-header-location{
+.header-location {
     color: var(--basic-dark);
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 24px;
 }
 
-.button-header{
+.header-button-username {
+
+}
+
+.header-button {
     background-color: var(--basic-white);
     color: var(--basic-black);
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 21px;
     line-height: 21px;
-    text-decoration: none;
+    text-align: center;
 }
 
-.button-header-login:hover{
+.header-buttonUser {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.header-buttonUser:hover {
+    color: var(--basic-red);
+}
+
+.header-buttonUser:active {
+    color: var(--basic-middle-gray);
+}
+
+.header-buttonUser-orders {
+
+}
+
+.header-buttonUser-profile {
+
+}
+
+
+.header-button:hover {
     color:var(--basic-red);
 }
 
-.button-header-register:hover{
-    color:var(--basic-red);
+.header-button:active {
+    color: var(--basic-middle-gray);
 }
 
 
-.main-header-nav{
+
+.header-nav {
     background-color: var(--basic-dark);
 }
 
-.main-header-nav a{
+.header-nav a {
     color: var(--basic-white);
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-    text-decoration: none;
 }
 
-.main-header-nav a:hover{
+.main-header-nav a:hover {
     background-color: var(--basic-darkest);
 }
 
-.main-header-nav li{
+.header-nav a:active {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: var(--basic-darkest);
+}
+
+.header-nav li {
     list-style-type: none;
 }
 
-.offer-small p{
+.catalog-breadcrumbs li {
+    list-style-type: none;
+}
+
+.offer-small {
+    list-style-type: none;
+}
+
+.offer-small p {
     color:var(--basic-white);
-    font-family: Cuprum, Arial;
-    font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
 }
 
-.offer-small a{
+.offer-small a {
     background-color: rgba(255,255,255,0.3);
     color:var(--basic-white);
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
-.offer-small a:hover{
+.offer-small a:hover {
     background-color: rgba(197,197,197,0.3);
 }
 
-.offer-small-lefttop{
+.offer-small a:active {
+    background-color: rgba(169,169,169, 0.3);
+}
+
+.offer-category-materials {
  background-color: var(--basic-orange);
 }
 
-.offer-small-centertop{
+.offer-category-tools {
     background-color: var(--basic-lightblue);
 }
 
-.offer-small-righttop{
+.offer-category-technics {
     background-color: var(--basic-magenta);
 }
 
-
-.offer-small-rightmiddle{
+.offer-category-discounts {
     background-color: var(--basic-lightgreen);
 }
 
-.offer-small-rightbottom{
+.offer-category-delivery {
     background-color: var(--basic-orange);
 }
 
-.offer-big{
+.offer-big {
+    list-style-type: none;
     background-image: url(../img/hammer-drill.jpg);
 }
 
-.offer-big p{
-    background: rgba(0, 0, 0, 0.25);
+.offer-big p {
+    background-color: rgba(0, 0, 0, 0.25);
     color: var(--basic-white);
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 24px;
 }
 
-.offer-big span{
-    font-style: normal;
+.offer-big span {
     font-weight: bold;
     font-size: 36px;
     line-height: 36px;
     text-transform: uppercase;
 }
 
-.button-red{
+.button-primary {
     background-color: var(--basic-red);
     color:var(--basic-white);
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
-.main-headerstripe{
+.button-primary:hover {
+    background-color: var(--basic-red-2);
+}
+
+.button-primary:active {
+    background-color: var(--basic-red-3);
+}
+
+.main-headerstripe {
     background-color: var(--basic-lightbiege);
 }
-.main-headerstripe h2{
+.main-headerstripe h2 {
     color: var(--basic-dark);
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 30px;
     line-height: 30px;
 }
 
-.topsale{
+.product {
     border: 1px solid var(--basic-extraligthgray);
     list-style-type: none;
 }
 
-.topsale h3 {
-    font-family: PT Sans, Arial;
-    font-style: normal;
+.product h3 {
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
 }
 
-.topsale a {
+.product a {
     text-decoration: none;
 }
 
-.main-fullprice{
+.product-fullprice {
     color: var(--basic-gray);
-    font-family: PT Sans, Arial;
-    font-style: normal;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
@@ -265,213 +333,315 @@
     text-transform: uppercase;
 }
 
-.main-actualprice{
+.product-actualprice {
     color:var(--basic-white);
     background-color: var(--basic-red);
-    font-family: PT Sans, Arial;
-    font-style: normal;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 17px;
     line-height: 18px;
     text-align: center;
     text-transform: uppercase;
-    text-decoration: none;
 }
 
-.brand li{
+.brand li {
     border: 1px solid var(--basic-extraligthgray);
     list-style-type: none;   
 }
 
-.services{
+.services {
     background-color: var(--basic-lightgray);
     color: var(--basic-black);
-    font-family: PT Sans, Arial;
-    font-style: normal;
-    font-weight: normal;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
 
 
-.services h2{
+.services h2 {
     color: var(--basic-black);
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
 }
 
 
-.services-list li{
+.services-list li {
     list-style-type: none;
 }
 
-.services-list li:hover{
+.services-list li:hover {
     background-color: var(--basic-darkest);
     color:var(--basic-white);
 }
-
-.service-selected{
-    background-color:var(--basic-white);
-    box-shadow: 0px 1px 0px var(--basic-white);
-    color: var(--basic-dark);
-    font-family: Cuprum, Arial;
-    font-style: normal;
+.service {
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
-}
-
-.service-notSelected{
     background-color:var(--basic-dark);
     box-shadow: 0px 1px 0px var(--basic-darkest), inset 0px 1px 0px var(--basic-dark-light);
     color: var(--basic-white);
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 30px;
 }
 
-.services-delivery{
+.service-selected {
+    background-color:var(--basic-white);
+    box-shadow: 0px 1px 0px var(--basic-white);
+    color: var(--basic-dark);
+
+}
+
+
+.services-delivery {
     background: url(../img/background-delivery.png) right bottom no-repeat;
 }
 
-.services-delivery h3{
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
+.services-delivery h3 {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
 }
 
-.company h2{
+.company h2 {
     color: var(--basic-black);
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
 }
 
-.company p{
+.company p {
     color: var(--basic-black);
-    font-family: PT Sans, Arial;
+    font-family: "PT Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
 }
 
-.company-delivery li{
+.company-delivery li {
     list-style: none; 
     background: url(../img/delivery-marker.svg) no-repeat left 50%; 
     padding-left: 35px;
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 24px;
 }
 
-.contacts h2{
+.contacts h2 {
     color: var(--basic-black);
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
 }
 
-.contacts p{
-    font-family: PT Sans, Arial;
-    font-style: normal;
-    font-weight: normal;
+.contacts p {
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
 
-.footer-upper{
+.footer-upper {
     background-color: var(--basic-dark);
 }
 
-.main-footer-nav a:hover{
+.footer-nav a:hover {
     text-decoration: underline;
 }
 
-.main-footer-logo{
+.footer-logo {
     background-color: var(--basic-red);
 }
 
-.footer-upper p{
+.footer-upper p {
     color: var(--basic-white-gray);
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 24px;
 }
 
-.footer-upper-phone{
+.footer-upper-phone {
     color: var(--basic-white-gray);
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-    text-decoration: none;
 }
 
-.main-footer-nav-pages{
+.footer-nav-pages {
     list-style-type: none;
 }
 
-.main-footer-nav-pages a{
+.footer-nav-pages a {
     color: var(--basic-white-blue);
+}
+
+.footer-nav-pages a:active {
+    color: #F1F5F7;
+    opacity: 0.5;
     text-decoration: none;
 }
 
-.main-footer-nav-catalog{
+.footer-nav-catalog {
     list-style-type: none;
 }
 
-.main-footer-nav-catalog a{
+.footer-nav-catalog a {
     color: var(--basic-lightorange);
+}
+
+.footer-nav-catalog a:active {
+    color: #FFD180;
+    opacity: 0.5;
     text-decoration: none;
 }
 
-.main-footer-contacts{
+.footer-contacts {
     background-color: var(--basic-darkest);
     color: var(--basic-white);
-    font-family: Cuprum, Arial;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 18px;
 }
 
 
-.main-footer-contacts a{
+.footer-contacts a {
     color: var(--basic-lightorange);
-    text-decoration: none;
 }
 
-.main-footer-contacts a:hover{
+.footer-contacts a:hover {
     color: var(--basic-lightorange);
     text-decoration: underline;
 }
 
-.main-footer-contacts-social a{
-    background: linear-gradient(0deg, #212A3A, #212A3A);
+.footer-contacts-social a {
+    background-color: linear-gradient(0deg, #212A3A, #212A3A);
 }
 
-.main-footer-contacts-social a:hover{
+.footer-contacts-social a:hover {
     background: var(--basic-red);
 }
 
+.footer-contacts-social li {
+    list-style-type: none;
+}
+
+
+.catalog-filter {
+    font-family: "PT Sans", Arial, sans-serif;
+}
+
+.catalog-filter fieldset {
+    border: 0px;
+    border-bottom: 1px var(--basic-lightgray) solid;
+}
+
+.catalog-filter fieldset p {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.catalog-title {
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    background-color: var(--basic-lightgray);
+}
+
+.catalog-filter-caption {
+    background-color: var(--basic-biege);
+    font-size: 13px;
+    line-height: 18px;    
+}
+
+
+.catalog-filter input[type=range],
+.catalog-filter input[type=number]
+ {
+    background-color: var(--basic-biege);
+    text-align: center;
+    border-width: 0px;
+}
+
+.catalog-filter label {
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.catalog-filter button {
+    background-color: var(--basic-white);
+    border: 1px var(--basic-extraligthgray) solid;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+
+.catalog-ordering
+{
+    background-color: var(--basic-biege);
+    text-transform: uppercase;
+}
+
+.catalog-orderby {
+    border-bottom: 1px var(--basic-red) dotted;
+    color: var(--basic-gray);
+}
+
+.catalog-orderby:hover {
+    border-bottom: 1px var(--basic-red) solid;
+    color: var(--basic-black);
+}
+
+.catalog-orderby-selected {
+    color: var(--basic-red);
+    border-bottom-width: 0px;
+}
+
+.catalog-list {
+    font-family: "PT Sans", Arial, sans-serif;
+}
+
+.catalog-list li {
+    list-style-type: none;
+}
+
+.catelog-products h2 {
+    color: var(--basic-black);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.catalog-about {
+    background-color: var(--basic-lightgray);
+}
+
+.catalog-about h2 {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.catalog-about p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.catalog-pages {
+
+}
+
+.catalog-pagenumber {
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: 1px var(--basic-extraligthgray) solid;
+}
+
+.catalog-pagenumber:hover {
+    border: 1px var(--basic-middle-gray) solid;
+}
+
+.catalog-pagenumber:active {
+    border: 1px var(--basic-red) solid;
+}
+
+.catalog-pagenumber-selected {
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+}
