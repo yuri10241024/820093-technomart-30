@@ -40,8 +40,8 @@
         </div>
         <div>
           <a href="#" class="header-button header-button-username">Равшан Джамшутович</a>
-          <a href="#" class="header-buttonUser header-buttonUser-orders">Мои заказы</a>
-          <a href="#" class="header-buttonUser header-buttonUser-profile">Личный кабинет</a>
+          <a href="#" class="header-user header-user-orders">Мои заказы</a>
+          <a href="#" class="header-user header-user-profile">Личный кабинет</a>
         </div>
       </div>
       <!--Навигация-->
@@ -49,7 +49,7 @@
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Каталог</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Спецпредложения</a></li>
           <li><a href="#">Доставка</a></li>
@@ -60,7 +60,7 @@
 
     <!--Основной раздел-->
     <main>
-      <ul class="catalog-breadcrumbs">
+      <ul class="breadcrumbs">
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
         <li><a href="#">Перфораторы</a></li>
@@ -68,7 +68,7 @@
       <h1 class="catalog-title">Перфораторы</h1>
       <!--Боковая панель-->
       <div class="catalog-filter">
-        <p class="catalog-filter-caption">Фильтр:</p>
+        <p>Фильтр:</p>
         <form action="https://echo.htmlacademy.ru/" method="get">
           <fieldset>
             <p>Цена:</p>
@@ -119,69 +119,88 @@
           <a href="#" class="catalog-orderby"><!--По убыванию--></a>
         </div>
         <ul class="catalog-products">
-          <li>
+          <li class="product">
+            <a href="#">
               <img src="img/hammer-drill-bosh-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSH BFG-6000">
-              <h2>Перфоратор BOSH BFG-6000</h2>
+              <h3>Перфоратор BOSH BFG-6000</h3>
               <p class="product-fullprice">30500 Р.</p>
-              <p class="product-actualprice">25500 Р.</p>                  
+              <p class="product-actualprice">25500 Р.</p>
+            </a>                  
           </li>
-          <li>
+          <li class="product">
+            <a href="#">
               <img src="img/hammer-drill-bosh-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSH BFG-6000">
-              <h2>Перфоратор BOSH BFG-6000</h2>
+              <h3>Перфоратор BOSH BFG-6000</h3>
               <p class="product-fullprice">30500 Р.</p>
-              <p class="product-actualprice">25500 Р.</p>                  
+              <p class="product-actualprice">25500 Р.</p>
+            </a>                  
           </li>
-          <li>
-              <h2>Перфоратор BOSH BFG-6000</h2>
+          <li class="product">
+            <a href="#">
+              <img src="img/hammer-drill-bosh-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSH BFG-6000">
+              <h3>Перфоратор BOSH BFG-6000</h3>
               <p class="product-fullprice">30500 Р.</p>
-              <p class="product-actualprice">25500 Р.</p>                  
+              <p class="product-actualprice">25500 Р.</p>  
+            </a>                
           </li>
-          <li>
+          <li class="product">
+            <a href="#">
               <img src="img/hammer-drill-bosh-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSH BFG-3000">
-              <h2>Перфоратор BOSH BFG-3000</h2>
+              <h3>Перфоратор BOSH BFG-3000</h3>
               <p class="product-fullprice">22500 Р.</p>
-              <p class="product-actualprice">15500 Р.</p>                  
+              <p class="product-actualprice">15500 Р.</p> 
+            </a>                 
           </li>
-          <li>
+          <li class="product">
+            <a href="#">
               <img src="img/hammer-drill-bosh-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSH BFG-6000">
-              <h2>Перфоратор BOSH BFG-6000</h2>
+              <h3>Перфоратор BOSH BFG-6000</h3>
               <p class="product-fullprice">30500 Р.</p>
-              <p class="product-actualprice">25500 Р.</p>                  
+              <p class="product-actualprice">25500 Р.</p>  
+            </a>                
           </li>
-          <li>
+          <li class="product">
+            <a href="#">
               <img src="img/hammer-drill-bosh-bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSH BFG-2000">
-              <h2>Перфоратор BOSH BFG-2000</h2>
-              <p class="product-actualprice">12500 Р.</p>                  
+              <h3>Перфоратор BOSH BFG-2000</h3>
+              <p class="product-actualprice">12500 Р.</p> 
+            </a>                 
           </li>
-          <li>
+          <li class="product">
+            <a href="#">
               <img src="img/hammer-drill-bosh-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSH BFG-3000">
-              <h2>Перфоратор BOSH BFG-3000</h2>
+              <h3>Перфоратор BOSH BFG-3000</h3>
               <p class="product-fullprice">22500 Р.</p>
-              <p class="product-actualprice">15500 Р.</p>                  
+              <p class="product-actualprice">15500 Р.</p>
+            </a>                  
           </li>
-          <li>
+          <li class="product">
+            <a href="#">
               <img src="img/hammer-drill-bosh-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSH BFG-6000">
-              <h2>Перфоратор BOSH BFG-6000</h2>
+              <h3>Перфоратор BOSH BFG-6000</h3>
               <p class="product-fullprice">30500 Р.</p>
-              <p class="product-actualprice">25500 Р.</p>                  
+              <p class="product-actualprice">25500 Р.</p>  
+            </a>                
           </li>
-          <li>
+          <li class="product">
+            <a href="#">
               <img src="img/hammer-drill-bosh-bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSH BFG-2000">
-              <h2>Перфоратор BOSH BFG-2000</h2>
-              <p class="product-actualprice">12500 Р.</p>                  
+              <h3>Перфоратор BOSH BFG-2000</h3>
+              <p class="product-actualprice">12500 Р.</p>  
+            </a>                
           </li>
         </ul>
  
         <!--страницы-->
-        <div class="catalog-pages">
-          <a href="#" class="catalog-pagenumber catalog-pagenumber-selected">1</a>
-          <a href="#" class="catalog-pagenumber">2</a>
-          <a href="#" class="catalog-pagenumber">3</a>
-          <a href="#" class="catalog-pagenumber">Следующая</a>
+        <div class="pageslist">
+          <a href="#" class="pageslist-pagenumber pageslist-pagenumber-selected">1</a>
+          <a href="#" class="pageslist-pagenumber">2</a>
+          <a href="#" class="pageslist-pagenumber">3</a>
+          <a href="#" class="pageslist-pagenumber">Следующая</a>
         </div>
       </div>
       <section class="catalog-about">
-        <h2>Пара слов о перфораторах</h2>
+        <h2 class="h-standard">Пара слов о перфораторах</h2>
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </section>
     </main>
@@ -197,7 +216,7 @@
           <ul class="footer-nav-pages">
             <li><a href="index.html">Главная</a></li>
             <li><a href="#">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Каталог</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="#">Спецпредложения</a></li>
             <li><a href="#">Доставка</a></li>
