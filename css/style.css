@@ -45,9 +45,6 @@ a {
 
 .h-highlight {
     color: var(--basic-dark);
-    font-size: 30px;
-    line-height: 30px;
-    text-transform: uppercase;    
 }
 
 
@@ -324,6 +321,7 @@ a {
 }
 
 .product h3 {
+    color: var(--basic-black);
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     font-size: 18px;
@@ -361,6 +359,9 @@ a {
 .services {
     background-color: var(--basic-lightgray);
     color: var(--basic-black);
+}
+
+.services-description {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
@@ -390,11 +391,10 @@ a {
     background-color:var(--basic-white);
     box-shadow: 0px 1px 0px var(--basic-white);
     color: var(--basic-dark);
-
 }
 
 
-.services-description {
+.services-details {
     background: url(../img/background-delivery.png) right bottom no-repeat;
 }
 
@@ -526,7 +526,7 @@ a {
     background-color: var(--basic-lightgray);
 }
 
-.catalog-filter p {
+.catalog-caption {
     background-color: var(--basic-biege);
     font-size: 13px;
     line-height: 18px;    
