@@ -24,12 +24,25 @@
     --basic-middle-gray: #C5C5C5;
 }
 
-body {
-    font-family: Cuprum, Arial, sans-serif;
-}
-
 a {
     text-decoration: none;
+}
+
+.page {
+    height: 100%;
+}
+
+.page-body
+{
+    font-family: Cuprum, Arial, sans-serif;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .header {
@@ -49,12 +62,19 @@ a {
 
 
 .header-toolbar {
+    display: grid;
+    grid-template-columns: min-content min-content 1fr;
     background-color: var(--basic-darkest);
 }
 .header-toolbar a {
     color: var(--basic-white);
     font-size: 18px;
     line-height: 24px;
+}
+
+
+.header-toolbar-actions{
+    justify-self: end;
 }
 
 .header-search {
@@ -131,6 +151,8 @@ a {
 }
 
 .header-middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--basic-lightgray);
 }
 
@@ -227,6 +249,14 @@ a {
     list-style-type: none;
 }
 
+.offers {
+    display: grid;
+    padding: 0px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 123px 123px 123px;
+    gap: 20px;
+}
+
 .offer-item {
     list-style-type: none;
 }
@@ -255,26 +285,50 @@ a {
 }
 
 .offer-item-materials {
- background-color: var(--basic-orange);
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: var(--basic-orange);
 }
 
 .offer-item-tools {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
     background-color: var(--basic-lightblue);
 }
 
 .offer-item-technics {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
     background-color: var(--basic-magenta);
 }
 
 .offer-item-discounts {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
     background-color: var(--basic-lightgreen);
 }
 
 .offer-item-delivery {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
     background-color: var(--basic-orange);
 }
 
 .offer-main {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
     list-style-type: none;
     background-image: url(../img/hammer-drill.jpg);
 }
@@ -311,8 +365,16 @@ a {
 }
 
 .main-headerstripe {
+    display: grid;
+    grid-template-columns: 1fr max-content;
     background-color: var(--basic-lightbiege);
+}
 
+.main-catalog {
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    gap: 20px;
+    padding: 0px;
 }
 
 .product {
@@ -351,6 +413,13 @@ a {
     text-transform: uppercase;
 }
 
+.brand{
+    display: grid;
+    grid-template-columns: 220px 220px 220px 220px;
+    gap: 20px;
+    padding: 0px;
+}
+
 .brand li {
     border: 1px solid var(--basic-extraligthgray);
     list-style-type: none;   
@@ -367,12 +436,18 @@ a {
     line-height: 24px;
 }
 
+.services-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
 
-.services-container {
+.services-tabs {
+    padding: 0px;
 }
 
 
 .service-tab {
+    width: 240px;
     list-style-type: none;
     font-weight: bold;
     font-size: 21px;
@@ -396,6 +471,11 @@ a {
 
 .services-details {
     background: url(../img/background-delivery.png) right bottom no-repeat;
+}
+
+.company-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 .company p {
@@ -423,7 +503,13 @@ a {
 }
 
 .footer-upper {
+    display: grid;
+    grid-template-columns: max-content 1fr;
     background-color: var(--basic-dark);
+}
+
+.footer-nav {
+    justify-self: end;
 }
 
 .footer-nav a:hover {
@@ -475,6 +561,8 @@ a {
 }
 
 .footer-contacts {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
     background-color: var(--basic-darkest);
     color: var(--basic-white);
     font-size: 16px;
@@ -489,6 +577,10 @@ a {
 .footer-contacts a:hover {
     color: var(--basic-lightorange);
     text-decoration: underline;
+}
+
+.social{
+    justify-self: center;
 }
 
 .social a {
