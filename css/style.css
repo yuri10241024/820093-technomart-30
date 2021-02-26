@@ -43,6 +43,7 @@ a {
 .container {
     width: 940px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .header {
@@ -62,8 +63,6 @@ a {
 
 
 .header-toolbar {
-    display: grid;
-    grid-template-columns: min-content min-content 1fr;
     background-color: var(--basic-darkest);
 }
 .header-toolbar a {
@@ -152,7 +151,7 @@ a {
 
 .header-middle {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     background-color: var(--basic-lightgray);
 }
 
@@ -176,6 +175,7 @@ a {
     font-size: 14px;
     line-height: 24px;
 }
+
 
 .header-button-username {
 
@@ -252,8 +252,8 @@ a {
 .offers {
     display: grid;
     padding: 0px;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 123px 123px 123px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 123px);
     gap: 20px;
 }
 
@@ -285,50 +285,28 @@ a {
 }
 
 .offer-item-materials {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;
     background-color: var(--basic-orange);
 }
 
 .offer-item-tools {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
     background-color: var(--basic-lightblue);
 }
 
 .offer-item-technics {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 4;
     background-color: var(--basic-magenta);
 }
 
 .offer-item-discounts {
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 4;
     background-color: var(--basic-lightgreen);
 }
 
 .offer-item-delivery {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 3;
-    grid-column-end: 4;
     background-color: var(--basic-orange);
 }
 
 .offer-main {
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-row: 2 / 4;
+    grid-column: 1 / 3;
     list-style-type: none;
     background-image: url(../img/hammer-drill.jpg);
 }
@@ -365,14 +343,12 @@ a {
 }
 
 .main-headerstripe {
-    display: grid;
-    grid-template-columns: 1fr max-content;
     background-color: var(--basic-lightbiege);
 }
 
 .main-catalog {
     display: grid;
-    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 0px;
 }
@@ -438,7 +414,7 @@ a {
 
 .services-container{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 240px 1fr;
 }
 
 .services-tabs {
@@ -502,10 +478,14 @@ a {
     line-height: 24px;
 }
 
+
+.footer-upper-wrapper {
+    background-color: var(--basic-dark);
+}
+
 .footer-upper {
     display: grid;
-    grid-template-columns: max-content 1fr;
-    background-color: var(--basic-dark);
+    grid-template-columns: 5fr 7fr;
 }
 
 .footer-nav {
@@ -561,8 +541,6 @@ a {
 }
 
 .footer-contacts {
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr 1fr;
     background-color: var(--basic-darkest);
     color: var(--basic-white);
     font-size: 16px;
@@ -596,12 +574,19 @@ a {
 }
 
 
+.catalog {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
+
 .catalog-filter {
     font-family: "PT Sans", Arial, sans-serif;
 }
 
 .catalog-filter fieldset {
     border: 0px;
+    padding: 0px;
     border-bottom: 1px var(--basic-lightgray) solid;
 }
 
@@ -609,6 +594,14 @@ a {
     font-weight: bold;
     font-size: 17px;
     line-height: 30px;
+}
+
+.catalog-filter-block {
+    padding: 0px;
+}
+
+.catalog-filter-option {
+    list-style-type: none;
 }
 
 .catalog-title {
@@ -650,6 +643,9 @@ a {
 
 .catalog-ordering
 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
     font-size: 13px;
     line-height: 18px;
     background-color: var(--basic-biege);
@@ -679,8 +675,12 @@ a {
     list-style-type: none;
 }
 
-.catalog-products {
 
+.catalog-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    padding: 0px;
 }
 
 .catalog-about {
