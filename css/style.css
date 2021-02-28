@@ -252,7 +252,7 @@ a {
 .offers {
     display: grid;
     padding: 0px;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 123px);
     gap: 20px;
 }
@@ -391,7 +391,7 @@ a {
 
 .brand{
     display: grid;
-    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 0px;
 }
@@ -485,7 +485,7 @@ a {
 
 .footer-upper {
     display: grid;
-    grid-template-columns: 5fr 7fr;
+    grid-template-columns: 340px 1fr;
 }
 
 .footer-nav {
@@ -557,7 +557,7 @@ a {
     text-decoration: underline;
 }
 
-.social{
+.social {
     justify-self: center;
 }
 
@@ -576,7 +576,7 @@ a {
 
 .catalog {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 220px 1fr;
     column-gap: 20px;
 }
 
@@ -644,7 +644,7 @@ a {
 .catalog-ordering
 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat (3, 1fr);
     column-gap: 20px;
     font-size: 13px;
     line-height: 18px;
@@ -678,8 +678,9 @@ a {
 
 .catalog-products {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat (3, 1fr);
     column-gap: 20px;
+    row-gap: 18px;
     padding: 0px;
 }
 
