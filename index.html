@@ -16,18 +16,18 @@
   <body class="page-body">
     <header class="header">
 <!--Верхняя строка-->
-      <div class="header-toolbar">
+      <div class="header-toolbar-background">
         <div class="container">
-          <a class="header-logo">
-            <img src="img/logo-technomart.svg" width="107" height="17" alt="Техномарт">
-          </a>
-          <form action="https://echo.htmlacademy.ru/" method="get" class="header-search">
-              <input type="text" name="search" class="search-field" placeholder="Поиск:">
-          </form>
-          <div class="header-toolbar-actions">
-            <a href="#" class="header-bookmarks">Закладки: 0</a>
-            <a href="#" class="header-cart">Корзина: 0</a>
-            <a href="#" class="header-order">Оформить заказ</a>
+          <div class="header-toolbar">
+            <a class="header-logo">
+              <img src="img/logo-technomart.svg" width="107" height="17" alt="Техномарт">
+            </a>
+            <form action="https://echo.htmlacademy.ru/" method="get" class="header-search">
+                <input type="text" name="search" class="header-search-field" placeholder="Поиск:">
+            </form>
+              <a href="#" class="header-bookmarks">Закладки: 0</a>
+              <a href="#" class="header-cart">Корзина: 0</a>
+              <a href="#" class="header-order">Оформить заказ</a>
           </div>
         </div> 
       </div>
@@ -36,7 +36,7 @@
         <p class="header-middle-description">
           Интернет-магазин строительных материалов и инструментов для ремонта
         </p>
-        <div>
+        <div class="header-middle-contacts">
           <p class="header-phone">
             <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           </p>
@@ -44,14 +44,14 @@
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
         </div>
-        <div>
+        <div class="header-login">
           <a href="#" class="header-button header-button-login">Войти</a>
           <a href="#" class="header-button header-button-register">Регистрация</a>
         </div>
       </div>
 <!--Навигация-->
       <nav class="header-nav container">
-        <ul>
+        <ul class="header-nav-items">
           <li><a>Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -71,33 +71,29 @@
           <li class="offer-item offer-item-materials">
             <p>Материалы</p>
             <a href="#">На любой вкус</a>
-            <img src="https://via.placeholder.com/44x65" alt="">             
           </li>
           <li class="offer-item offer-item-tools">
             <p>Инструмент</p>
             <a href="#">На все случаи</a>
-            <img src="https://via.placeholder.com/75x61" alt="">             
           </li>
           <li class="offer-item offer-item-technics">
             <p>Техника</p>
             <a href="#">Для стройки</a>
-            <img src="https://via.placeholder.com/78x62" alt="">             
           </li>
           <li class="offer-main">
             <p><span>Перфораторы</span><br>
             Настоящие мужские игрушки
             </p>
-            <a href="#" class="button-primary">Открыть каталог</a>            
+            <div class="main-offer-separator"></div>
+            <a href="#" class="button-primary button-main-catalog">Открыть каталог</a>            
           </li>
           <li class="offer-item offer-item-discounts">
             <p>Скидки</p>
             <a href="#">На 350 товаров</a>
-            <img src="https://via.placeholder.com/59x72" alt="">             
           </li>
           <li class="offer-item offer-item-delivery">
             <p>Доставка</p>
             <a href="#">Бесплатно</a>
-            <img src="https://via.placeholder.com/78x63" alt="">            
           </li>
         </ul>
 
@@ -105,12 +101,14 @@
         <section>
           <div class="main-headerstripe">
             <h2 class="h-standard h-highlight">Популярные товары:</h2>
-            <a href="#" class="button-primary">Все популярные товары</a>
+            <a href="#" class="button-primary button-topgoods">Все популярные товары</a>
           </div>
           <ul class="main-catalog">
             <li class="product">
               <a href="#">
-                <img src="img/hammer-drill-bosh-bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG-9000">
+                <p class="product-image">
+                  <img src="img/hammer-drill-bosh-bfg-9000.jpg" width="184" height="164" alt="Перфоратор BOSH BFG-9000">
+                </p>
                 <h3>Перфоратор BOSH BFG-9000</h3>
                 <p class="product-fullprice">32500 Р.</p>
                 <p class="product-actualprice">25500 Р.</p>
@@ -118,7 +116,9 @@
             </li>
             <li class="product">
               <a href="#">
-                <img src="img/hammer-drill-bosh-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSH BFG-3000">
+                <p class="product-image">
+                  <img src="img/hammer-drill-bosh-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSH BFG-3000">
+                </p>
                 <h3>Перфоратор BOSH BFG-3000</h3>
                 <p class="product-fullprice">22500 Р.</p>
                 <p class="product-actualprice">15500 Р.</p>
@@ -126,7 +126,9 @@
             </li>
             <li class="product">
               <a href="#">
-                <img src="img/hammer-drill-bosh-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSH BFG-6000">
+                <p class="product-image">
+                  <img src="img/hammer-drill-bosh-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSH BFG-6000">
+                </p>
                 <h3>Перфоратор BOSH BFG-6000</h3>
                 <p class="product-fullprice">30500 Р.</p>
                 <p class="product-actualprice">25500 Р.</p>
@@ -134,7 +136,9 @@
             </li>
             <li class="product">
               <a href="#">
-                <img src="img/hammer-drill-bosh-bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSH BFG-2000">
+                <p class="product-image">
+                  <img src="img/hammer-drill-bosh-bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSH BFG-2000">
+                  </p>
                 <h3>Перфоратор BOSH BFG-9000</h3>
                 <p class="product-fullprice">22500 Р.</p>
                 <p class="product-actualprice">12500 Р.</p>
@@ -236,21 +240,19 @@
       <div class="footer-upper-wrapper">
         <div class="container footer-upper">
           <div>
-          <a href="index.html" class="footer-logo">
-            <img src="img/logo-technomart.svg" width="136" height="21" alt="Техномарт">
-          </a>
-          <p>
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            <a href="tel:+78125550555" class="footer-upper-phone">+7 (812) 555-05-55</a>
-          </p>
+            <a href="index.html" class="footer-logo">
+              <img src="img/logo-technomart.svg" width="136" height="21" alt="Техномарт">
+            </a>
+            <p>
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+              <a href="tel:+78125550555" class="footer-upper-phone">+7 (812) 555-05-55</a>
+            </p>
           </div>
           <nav class="footer-nav">
             <ul class="footer-nav-pages">
-              <li><a>Главная</a></li>
               <li><a href="#">Компания</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
               <li><a href="#">Новости</a></li>
-              <li><a href="#">Спецпредложения</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
@@ -263,9 +265,9 @@
           </nav>
         </div>
       </div>
-      <div class="footer-contacts">
-        <div class="container">
-          <p>
+      <div class="footer-contacts-background">
+        <div class="container footer-contacts">
+          <p class="footer-contacts-copyright">
             © 2010-2019 Компания «Техномарт»<br>
             Все права защищены
           </p>
@@ -292,11 +294,11 @@
                 </a>
             </li>
           </ul>
-          <p>
+          <p class="footer-contacts-feedback">
             Обратная связь:<br>
             <a class="footer-feedback" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
-          <p>
+          <p class="footer-contacts-developer">
             Разработано –<br>
             <a class="footer-feedback" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
